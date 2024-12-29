@@ -139,13 +139,14 @@ target country and saved under ’actual’ column; 1 for positive and -1 for ne
 Then we combined the ’header’ and ’bodies’ of the news and saved their VADER
 ’compound’ score under ’compound’ column. Then, if the compound score is positive
 we saved it as 1 under the column ’vader’, and -1 if it’s negative (shown in figure below).  
-
+![ ](images/Screenshot_1.png)
 
 Then we compared the scores given by human decision and VADER evaluation and
 saved it under the column ’success’; ’True’ if they agree with each other and ’False’
 if they don’t. We calculated the success rate of VADER by finding the percentage of
 ’True’s under this column. The success rate for this sample set of data is 76.3% (shown
-in figure below).  
+in figure below).
+![ ](images/Screenshot_2.png)
 
 <h3>Loading the Data</h3>
 As previously mentioned, our news data set we improved and worked on includes
@@ -185,6 +186,8 @@ Figure below  shows an example of subject correcting applied successfully. The n
 header ’Russia, Germany hope efforts to save Iran nuclear deal will be continued.’
 initially has CH (China) as the country the news is about. But our model changed it
 to DE (Germany).
+![ ](images/Screenshot_3.png)
+
 
 <h3>Calculating VADER Score</h3>
 Before calculating the average sentiment score, firstly a new column is created
@@ -212,8 +215,11 @@ country pairs and calculating average scores of news between. Output of this is 
 an Excel file, ready to be used by the interface module.  
 
 In the figures below, relations matrix between countries are depicted. First one is for the whole dataset
-and the second one is for the last 6 months. 
+and the second one is for the last 6 months.   
 
+  
+![Relations matrix (Whole dataset)](images/Screenshot_4.png)
+![Relations matrix (Last 6 months)](images/Screenshot_5.png)
 <h3>Visualization</h3>
 To create user interface, a Python package called "Tkinter" has been used. While
 creating the map, a Python package called "Geopandas" and to show the map
@@ -238,7 +244,7 @@ positive values and all of the countries has more yellowish color than violet pu
 (0 value).  
 
 If we change the point of view to UK, a result like the figure below is shown.
-We can see that United Kingdom looks none of the other countries positively, but the negativity reaches higher with Russia, Iran and China.  
+We can see that United Kingdom looks none of the other countries positively, but the negativity reaches higher with Russia, Iran and China. 
 
 When we change the dataset to last 6 months (2021/06-12), we can see that United Kingdom's point of view Russia, Iran and China
 persists, and also the sentiment to France is generally more negative. This is caused by the news concerning the fishing dispute news which was caused by Brexit (2021 Jersey Dispute).  
