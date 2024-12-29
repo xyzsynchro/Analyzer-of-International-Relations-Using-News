@@ -218,8 +218,7 @@ In the figures below, relations matrix between countries are depicted. First one
 and the second one is for the last 6 months.   
 
   
-![Relations matrix (Whole dataset)](images/Screenshot_4.png)
-![Relations matrix (Last 6 months)](images/Screenshot_5.png)
+
 <h3>Visualization</h3>
 To create user interface, a Python package called "Tkinter" has been used. While
 creating the map, a Python package called "Geopandas" and to show the map
@@ -234,7 +233,8 @@ paints the countries based on calculated relations. If index is positive, it sho
 relations. If index is negative, it shows bad relations. Other countries exempt from
 this project are initialized with zero.  
 
-<h2> Experimental Results </h2>
+Experimental Results   
+
 In this example shown in figure below; user has selected United Kingdom as country,
 ’all the data’ as time range and ’others’ vision’ as the point of view. With this result,
 it is possible to make a comment as "Japan, compared to other countries, has better
@@ -243,11 +243,19 @@ United Kingdom positively -except Canada-. The legend has mostly
 positive values and all of the countries has more yellowish color than violet purple
 (0 value).  
 
+  
+![ ](images/Screenshot_6.png)  
+  
 If we change the point of view to UK, a result like the figure below is shown.
-We can see that United Kingdom looks none of the other countries positively, but the negativity reaches higher with Russia, Iran and China. 
+We can see that United Kingdom looks none of the other countries positively, but the negativity reaches higher with Russia, Iran and China.   
+  
+![ ](images/Screenshot_7.png)
 
 When we change the dataset to last 6 months (2021/06-12), we can see that United Kingdom's point of view Russia, Iran and China
 persists, and also the sentiment to France is generally more negative. This is caused by the news concerning the fishing dispute news which was caused by Brexit (2021 Jersey Dispute).  
+
+  
+![ ](images/Screenshot_8.png)
 
 <h2>Conclusion</h2>
 The given results show us that VADER is accurate with straightforward relationships.
@@ -277,3 +285,10 @@ in the same news.
 
 In conclusion, this project can be a good guide for us to perceive understand relations of
 countries and viewing them on the map, if the news dataset about the wanted timeframe is provided  
+
+
+<h2>How to Use</h2>
+Make sure the required packages (NumPy, Pandas, VADER, Tkinter, Geopandas, NLTK, Descartes, SpaCy) are installed.  
+Make sure the data files (dataset_last6.xlsx and dataset.csv) are placed in the same directory as the Analysis.ipynb and GUI.py files.  
+Analysis.ipynb is ran and blocks in notebook are executed step by step, and as a result two new data files are generated.
+GUI.py is executed, and by making selections, the visualized results are obtained.
