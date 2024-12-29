@@ -289,6 +289,9 @@ countries and viewing them on the map, if the news dataset about the wanted time
 
 <h2>How to Use</h2>
 Make sure the required packages (NumPy, Pandas, VADER, Tkinter, Geopandas, NLTK, Descartes, SpaCy) are installed.  
-Make sure the data files (dataset_last6.xlsx and dataset.csv) are placed in the same directory as the Analysis.ipynb and GUI.py files.  
-Analysis.ipynb is ran and blocks in notebook are executed step by step, and as a result two new data files are generated.
+
+Make sure the data files (dataset_last6.xlsx and dataset.csv) are placed in the same directory as the Analysis.ipynb and GUI.py files.   
+
+Analysis.ipynb is ran and blocks in notebook are executed step by step, and as a result two new data files are generated.   
+
 GUI.py is executed, and by making selections, the visualized results are obtained.
