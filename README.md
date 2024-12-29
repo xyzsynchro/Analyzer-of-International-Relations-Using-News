@@ -209,7 +209,10 @@ for appyling Natural Language Processing.
 After calculating the VADER scores for each news, what is left to do is grouping by
 country pairs and calculating average scores of news between. Output of this is the
 10x10 matrix, 2-way between each country pair. This relation matrix is then saved to
-an Excel file, ready to be used by the interface module.
+an Excel file, ready to be used by the interface module.  
+
+In the figures below, relations matrix between countries are depicted. First one is for the whole dataset
+and the second one is for the last 6 months. 
 
 <h3>Visualization</h3>
 To create user interface, a Python package called "Tkinter" has been used. While
