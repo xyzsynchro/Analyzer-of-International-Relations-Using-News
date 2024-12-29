@@ -1,0 +1,4 @@
+Make sure the required packages (VADER, Tkinter, Geopandas, NLTK, and SpaCy) are installed.
+First, the data files (dataset_last6.xlsx and dataset.csv) are placed in the same directory as the Analysis.ipynb and GUI.py files.
+Analysis.ipynb is ran and blocks in notebook are executed step by step, and as a result two new data files are generated.
+GUI.py is executed, and by making selections, the visualized results are obtained.
